@@ -1,0 +1,14 @@
+{
+  "name": "p2p-test",
+  "version": "1.0.0",
+  "main": "browser-test.js",
+  "scripts": {
+    "start": "node browser-test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "puppeteer": "^23.9.0"
+  }
+}

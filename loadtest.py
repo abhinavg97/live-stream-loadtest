@@ -12,6 +12,6 @@ class VideoStreamUser(HttpUser):
         m3u8_content = response.text
         segments = [line for line in m3u8_content.splitlines() if line.endswith('.ts')]
         for segment in segments:
-            self.client.get(f"/{segment}")
+            self.client.get(f"{segment}")
 
-# Usage: locust -f this_file.py --host=http://localhost:8000
+# Usage: locust -f this_file.py --host=http://localhost:8002
